@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  	<meta charset = "utf-8"/>
+  	<meta name = "author" content="Timur Ridjanovic"/>
+    <title>Spaceship Wars</title>
+    <link rel="stylesheet" href="css/menu.css"/>
+    <link rel="stylesheet" href="css/page.css"/>
+    <link rel="stylesheet" href="css/list.css"/>
+    <link rel="stylesheet" href="css/layout.css"/>
+  </head>
+  <body>
+     <div class = "whitebox">
+     <header>
+       <h2>Invaders</h2>
+     </header>
+     <nav>
+       <ul>
+         <li>About
+           <ul>
+             <li>
+               <button id="blog" onClick="window.open('http://dartninja.com');">
+                 Blog
+               </button>
+             </li>
+           </ul>
+         </li>
+       </ul>
+     </nav>
+     <p/>
+     <h3>by Timur Ridjanovic</h3>
+    <section>
+      <canvas id = "canvas" width = "950" height = "560">
+        <img id ="spaceship" src="css/img/spaceship.png"></img>
+        <img id ="cloud" src="css/img/cloud.png"></img>
+      	<img id ="creature" src="css/img/creature.png"></img>
+      	<img id ="explosion" src="css/img/explosion.gif"></img>
+      </canvas>
+      <script type="application/dart" src="invaders.dart"></script>
+      <script
+        src=
+    "http://dart.googlecode.com/svn/branches/bleeding_edge/dart/client/dart.js">
+      </script>
+    </section>
+    </div>
+  </body>
+</html>
