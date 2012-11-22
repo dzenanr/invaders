@@ -1,3 +1,5 @@
+part of invaders;
+
 class Cloud {
   Board board;
   int x;

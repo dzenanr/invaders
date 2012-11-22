@@ -1,3 +1,5 @@
+part of invaders;
+
 class Board {
   int x = 0;
   int y = 0;

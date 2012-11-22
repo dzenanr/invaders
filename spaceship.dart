@@ -1,3 +1,5 @@
+part of invaders;
+
 class Spaceship {
   Board board;
   int x;

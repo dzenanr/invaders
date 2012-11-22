@@ -1,3 +1,5 @@
+part of invaders;
+
 class Creature {
   Board board;
   int x;

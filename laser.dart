@@ -1,3 +1,5 @@
+part of invaders;
+
 class Laser {
   Board board;
   int x;
