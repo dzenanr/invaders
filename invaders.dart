@@ -1,7 +1,7 @@
 library invaders;
 
 import 'dart:html';
-import 'dart:isolate';
+import 'dart:async';
 import 'dart:math';
 
 part 'board.dart';
