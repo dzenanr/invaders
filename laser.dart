@@ -13,7 +13,7 @@ class Laser {
 
   Laser(this.board, this.x, this.y, this.width, this.height,
         this.creature1, this.creature2, this.creature3) {
-    document.on.mouseDown.add((MouseEvent e) {
+    document.onMouseDown.listen((MouseEvent e) {
       x = e.offsetX;
       y = e.offsetY - 80;
     });
