@@ -18,7 +18,7 @@ class Laser {
       y = e.offsetY - 80;
     });
     // Redraw every 8 ms.
-    new Timer.repeating(8, (t) => draw());
+    new Timer.repeating(const Duration(milliseconds: 8), (t) => draw());
   }
 
   draw() {

@@ -16,7 +16,7 @@ class Creature {
     creature = document.query('#creature');
     explosion = document.query('#explosion');
     // Redraw every 8 ms.
-    new Timer.repeating(8, (t) => move());
+    new Timer.repeating(const Duration(milliseconds: 8), (t) => move());
   }
 
   move() {
