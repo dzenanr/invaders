@@ -14,11 +14,11 @@ class Laser {
   Laser(this.board, this.x, this.y, this.width, this.height,
         this.creature1, this.creature2, this.creature3) {
     document.onMouseDown.listen((MouseEvent e) {
-      x = e.offsetX;
-      y = e.offsetY - 80;
+      x = e.offset.x;
+      y = e.offset.y - 80;
     });
     // Redraw every 8 ms.
-    new Timer.repeating(const Duration(milliseconds: 8), (t) => draw());
+    new Timer.periodic(const Duration(milliseconds: 8), (t) => draw());
   }
 
   draw() {

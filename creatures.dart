@@ -16,7 +16,7 @@ class Creature {
     creature = document.query('#creature');
     explosion = document.query('#explosion');
     // Redraw every 8 ms.
-    new Timer.repeating(const Duration(milliseconds: 8), (t) => move());
+    new Timer.periodic(const Duration(milliseconds: 8), (t) => move());
   }
 
   move() {
@@ -38,9 +38,9 @@ class Creature {
 
   draw() {
     if (visible) {
-      board.context.drawImage(creature, x, y, width, height);
+      board.context.drawImage(creature, x, y);
     } else {
-      board.context.drawImage(explosion, x, y, width, height);
+      board.context.drawImage(explosion, x, y);
     }
   }
 }

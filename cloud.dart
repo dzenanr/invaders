@@ -13,7 +13,7 @@ class Cloud {
   Cloud(this.board, this.x, this.y, this.width, this.height) {
     cloud = document.query('#cloud');
     // Redraw every 8 ms.
-    new Timer.repeating(const Duration(milliseconds: 8), (t) => move());
+    new Timer.periodic(const Duration(milliseconds: 8), (t) => move());
   }
 
   move() {
@@ -32,6 +32,6 @@ class Cloud {
   }
 
   draw() {
-    board.context.drawImage(cloud, x, y, width, height);
+    board.context.drawImage(cloud, x, y);
   }
 }

@@ -35,7 +35,7 @@ class Board {
     spaceship = new Spaceship(this, 350, 100, 70, 70);
     border();
     // Redraw every 8 ms.
-    new Timer.repeating(const Duration(milliseconds: 8), (t) => draw());
+    new Timer.periodic(const Duration(milliseconds: 8), (t) => draw());
   }
 
   border() {
