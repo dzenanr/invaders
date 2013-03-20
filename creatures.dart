@@ -38,9 +38,9 @@ class Creature {
 
   draw() {
     if (visible) {
-      board.context.drawImage(creature, x, y);
+      board.context.drawImageAtScale(creature, new Rect(x, y, width, height));
     } else {
-      board.context.drawImage(explosion, x, y);
+      board.context.drawImageAtScale(explosion, new Rect(x, y, width, height));
     }
   }
 }

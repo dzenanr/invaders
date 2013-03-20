@@ -18,6 +18,6 @@ class Spaceship {
   }
 
   draw() {
-    board.context.drawImage(spaceship, x, y);
+    board.context.drawImageAtScale(spaceship, new Rect(x, y, width, height));
   }
 }
