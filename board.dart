@@ -34,8 +34,13 @@ class Board {
     laser = new Laser(this, 20, 20, 3, 50, creature1, creature2, creature3);
     spaceship = new Spaceship(this, 350, 100, 70, 70);
     border();
-    // Redraw every 8 ms.
-    new Timer.periodic(const Duration(milliseconds: 8), (t) => draw());
+    // redraw
+    window.animationFrame.then(gameLoop);
+  }
+
+  gameLoop(num delta) {
+    draw();
+    window.animationFrame.then(gameLoop);
   }
 
   border() {
