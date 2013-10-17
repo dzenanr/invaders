@@ -32,6 +32,6 @@ class Cloud {
   }
 
   draw() {
-    board.context.drawImageToRect(cloud, new Rect(x, y, width, height));
+    board.context.drawImageToRect(cloud, new Rectangle(x, y, width, height));
   }
 }

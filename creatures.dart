@@ -38,9 +38,9 @@ class Creature {
 
   draw() {
     if (visible) {
-      board.context.drawImageToRect(creature, new Rect(x, y, width, height));
+      board.context.drawImageToRect(creature, new Rectangle(x, y, width, height));
     } else {
-      board.context.drawImageToRect(explosion, new Rect(x, y, width, height));
+      board.context.drawImageToRect(explosion, new Rectangle(x, y, width, height));
     }
   }
 }
