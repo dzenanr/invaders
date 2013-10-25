@@ -13,8 +13,8 @@ class Creature {
   ImageElement explosion;
 
   Creature(this.board, this.x, this.y, this.width, this.height) {
-    creature = document.query('#creature');
-    explosion = document.query('#explosion');
+    creature = document.querySelector('#creature');
+    explosion = document.querySelector('#explosion');
     // Redraw every 8 ms.
     new Timer.periodic(const Duration(milliseconds: 8), (t) => move());
   }

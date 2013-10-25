@@ -9,7 +9,7 @@ class Spaceship {
   ImageElement spaceship;
 
   Spaceship(this.board, this.x, this.y, this.width, this.height) {
-    spaceship = document.query('#spaceship');
+    spaceship = document.querySelector('#spaceship');
     document.onMouseMove.listen((MouseEvent e) {
       x = e.offset.x - 35;
       y = e.offset.y - 35;

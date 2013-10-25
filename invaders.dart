@@ -11,5 +11,5 @@ part 'cloud.dart';
 part 'creatures.dart';
 
 main() {
-  new Board(document.query('#canvas'));
+  new Board(document.querySelector('#canvas'));
 }

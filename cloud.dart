@@ -11,7 +11,7 @@ class Cloud {
   ImageElement cloud;
 
   Cloud(this.board, this.x, this.y, this.width, this.height) {
-    cloud = document.query('#cloud');
+    cloud = document.querySelector('#cloud');
     // Redraw every 8 ms.
     new Timer.periodic(const Duration(milliseconds: 8), (t) => move());
   }
