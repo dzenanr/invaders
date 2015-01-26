@@ -1,5 +1,5 @@
 name: invaders
-version: 0.0.3
+version: 0.0.4
 author: Timur Ridjanovic <timur.ridjanovic@gmail.com>
 description: A game in Dart. The goal is to survive.
 homepage: http://ondart.me/
