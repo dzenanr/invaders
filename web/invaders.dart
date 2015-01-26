@@ -1,5 +1,3 @@
-library invaders;
-
 import 'dart:html';
 
 import 'package:invaders/invaders.dart';
